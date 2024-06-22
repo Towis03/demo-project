@@ -1,14 +1,15 @@
 package com.example.demo.user;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.NaturalId;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.example.demo.bookorder.BookOrder;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -27,4 +28,12 @@ public class User {
     private String userPhone;
     private String role;
     private boolean isEnabled = false;
+    private String occupation;
+    private boolean firstLogin;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonManagedReference("user-order")
+    private List<BookOrder> bookOrders;
+
+    
 }
