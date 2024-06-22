@@ -27,4 +27,13 @@ public class User {
     private String userPhone;
     private String role;
     private boolean isEnabled = false;
+    private String occupation;
+
+    public String getOccupation() {
+        return occupation;
+    }
+
+    public void setOccupation(String occupation) {
+        this.occupation = occupation;
+    }
 }
