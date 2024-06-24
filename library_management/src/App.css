@@ -1,0 +1,98 @@
+/* #root {
+  width: 100vw;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: #E1DCC5;
+    height: 100vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+#root {
+  width: 100vw;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: #E1DCC5;
+}
+.service, 
+.cbp-filter-item, 
+.btn ,
+.small-heading{
+  border-radius: 10px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.body-page{
+  margin: 30px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #babbae;
+  z-index: 1;
+  position: relative;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.slideshow-container .slider{
+  padding: 20px 0;
+  background-color: #F3EDD7;
+}
+
+.slideshow-container:last-child {
+  padding: 20px 0 0 0
+}
+.our-services .service{
+
+  background-color: #FCFBE1;
+}
+
+h5{
+  color: #002178;
+}
+
+.header-title{
+
+  left: 5%;
+    top: 0;
+    position: absolute;
+}

@@ -35,5 +35,5 @@ public class User {
     @JsonManagedReference("user-order")
     private List<BookOrder> bookOrders;
 
-    
+
 }
